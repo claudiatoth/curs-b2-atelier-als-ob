@@ -40,7 +40,7 @@ function buildEx1() {
             <span class="exercise-number">${i + 1}</span>
             <div class="input-group">
                 <label>${it.sentence}</label>
-                <small style="color:#5A5147">💬 ${it.translation}</small>
+                ${it.translation ? '<small style="color:#5A5147">💬 ' + it.translation + '</small>' : ''}
                 <input type="text" id="ex1-${it.id}" placeholder="Konjunktiv II">
             </div>
             <div class="feedback" id="ex1-f${it.id}"></div>
@@ -79,7 +79,7 @@ const ex2Data = [
     { id: 'e', sentence: 'Sie tut, als ____ sie mich nicht sehen. (können)', translation: 'können.', correct: 'könnte', accept: ['könnte', 'koennte'] },
     { id: 'f', sentence: 'Er rennt, als ____ es um sein Leben. (gehen)', translation: 'gehen.', correct: 'ginge', accept: ['ginge'] },
     { id: 'g', sentence: 'Es klingt, als ____ jemand an der Tür. (stehen)', translation: 'stehen.', correct: 'stünde', accept: ['stünde', 'stuende', 'stände', 'staende'] },
-    { id: 'h', sentence: 'Sie lächelt, als ____ nichts geschehen. (sein)', translation: 'trecut ireal: als wäre nichts geschehen.', correct: 'wäre', accept: ['wäre', 'waere'] }
+    { id: 'h', sentence: 'Sie lächelt, als ____ nichts geschehen. (sein)', translation: '', correct: 'wäre', accept: ['wäre', 'waere'] }
 ];
 
 function buildEx2() {
@@ -94,7 +94,7 @@ function buildEx2() {
             <span class="exercise-number">${i + 1}</span>
             <div class="input-group">
                 <label>${it.sentence}</label>
-                <small style="color:#5A5147">💬 ${it.translation}</small>
+                ${it.translation ? '<small style="color:#5A5147">💬 ' + it.translation + '</small>' : ''}
                 <input type="text" id="ex2-${it.id}" placeholder="Konjunktiv II">
             </div>
             <div class="feedback" id="ex2-f${it.id}"></div>
@@ -133,7 +133,7 @@ const ex3Data = [
     { id: 'e', sentence: 'Ich ____ mich, als ob ich fliegen würde. (sich fühlen)', translation: 'sich fühlen.', correct: 'fühle', accept: ['fühle', 'fuehle'] },
     { id: 'f', sentence: 'Es ____, als ob alles gut wäre. (scheinen)', translation: 'scheinen.', correct: 'scheint', accept: ['scheint'] },
     { id: 'g', sentence: 'Er ____ so, als ob nichts passiert wäre. (tun)', translation: 'so tun.', correct: 'tut', accept: ['tut'] },
-    { id: 'h', sentence: 'Es ____ mir vor, als ob wir uns kennen würden. (vorkommen)', translation: 'es kommt mir vor.', correct: 'kommt', accept: ['kommt'] }
+    { id: 'h', sentence: 'Es ____ mir vor, als ob wir uns kennen würden. (vorkommen)', translation: '', correct: 'kommt', accept: ['kommt'] }
 ];
 
 function buildEx3() {
@@ -148,7 +148,7 @@ function buildEx3() {
             <span class="exercise-number">${i + 1}</span>
             <div class="input-group">
                 <label>${it.sentence}</label>
-                <small style="color:#5A5147">💬 ${it.translation}</small>
+                ${it.translation ? '<small style="color:#5A5147">💬 ' + it.translation + '</small>' : ''}
                 <input type="text" id="ex3-${it.id}" placeholder="verbul principal">
             </div>
             <div class="feedback" id="ex3-f${it.id}"></div>
@@ -202,7 +202,7 @@ function buildEx4() {
             <span class="exercise-number">${i + 1}</span>
             <div class="input-group">
                 <label>${it.sentence}</label>
-                <small style="color:#5A5147">💬 ${it.translation}</small>
+                ${it.translation ? '<small style="color:#5A5147">💬 ' + it.translation + '</small>' : ''}
                 <input type="text" id="ex4-${it.id}" placeholder="wäre / hätte">
             </div>
             <div class="feedback" id="ex4-f${it.id}"></div>

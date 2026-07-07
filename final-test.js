@@ -20,7 +20,7 @@ const finalTestData = [
     { type: 'luckentext', category: '👁️ Hauptsatzverb', question: 'Completează (so tun):', sentence: 'Er <strong>______</strong> so, als ob er der Chef wäre. (tun)', translation: 'so tun.', accept: ['tut'], correct: 'tut', explanation: 'so tun, als ob … = a se preface că.' },
 
     // ⏳ Zeit (3)
-    { type: 'luckentext', category: '⏳ Zeit', question: 'Completează (vorzeitig):', sentence: 'Sie sieht aus, als ob sie nicht geschlafen <strong>______</strong>.', translation: 'anterior: geschlafen + hätte.', accept: ['hätte', 'haette'], correct: 'hätte', explanation: 'vorzeitig → Partizip II + hätte (schlafen ia haben).' },
+    { type: 'luckentext', category: '⏳ Zeit', question: 'Completează (vorzeitig):', sentence: 'Sie sieht aus, als ob sie nicht geschlafen <strong>______</strong>.', translation: '', accept: ['hätte', 'haette'], correct: 'hätte', explanation: 'vorzeitig → Partizip II + hätte (schlafen ia haben).' },
     { type: 'multiple', category: '⏳ Zeit', question: '„als ob er krank gewesen ___" — completează:', options: ['wäre', 'hätte', 'ist', 'war'], correct: 'wäre', explanation: 'sein → gewesen + wäre (trecut ireal).' },
     { type: 'luckentext', category: '⏳ Zeit', question: 'Completează (gleichzeitig, sein):', sentence: 'Er lächelt, als ob er glücklich <strong>______</strong>.', translation: 'simultan.', accept: ['wäre', 'waere'], correct: 'wäre', explanation: 'gleichzeitig → Konjunktiv II prezent: wäre.' },
 
@@ -107,7 +107,7 @@ function showQuestion(index) {
     feedback.textContent = '';
     let questionHTML = '';
     if (q.type === 'luckentext') {
-        questionHTML = `<div class="test-question"><div class="test-question-label">${q.question}</div><div class="test-question-content">${q.sentence}</div><small class="test-translation">💬 ${q.translation}</small><input type="text" id="test-answer" class="test-input" placeholder="Scrie răspunsul..."></div>`;
+        questionHTML = `<div class="test-question"><div class="test-question-label">${q.question}</div><div class="test-question-content">${q.sentence}</div>${q.translation ? '<small class="test-translation">💬 ' + q.translation + '</small>' : ''}<input type="text" id="test-answer" class="test-input" placeholder="Scrie răspunsul..."></div>`;
     } else if (q.type === 'multiple') {
         let optionsHTML = '';
         q.options.forEach((opt, i) => { optionsHTML += `<div class="mc-option"><input type="radio" name="test-answer" value="${opt.replace(/"/g, '&quot;')}" id="test-opt-${i}"><label for="test-opt-${i}">${opt}</label></div>`; });
