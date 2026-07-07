@@ -5,24 +5,24 @@
 
 const finalTestData = [
     // 🎭 als ob + Konjunktiv II (3)
-    { type: 'luckentext', category: '🎭 als ob + KII', question: 'Completează (sein → KII):', sentence: 'Er tut, als ob er krank <strong>______</strong>.', translation: 'comparație ireală → wäre.', accept: ['wäre', 'waere'], correct: 'wäre', explanation: 'als ob = ireal → Konjunktiv II: wäre (nu „ist").' },
+    { type: 'luckentext', category: '🎭 als ob + KII', question: 'Completează (sein → KII):', sentence: 'Er tut, als ob er krank <strong>______</strong>.', translation: 'comparație ireală.', accept: ['wäre', 'waere'], correct: 'wäre', explanation: 'als ob = ireal → Konjunktiv II: wäre (nu „ist").' },
     { type: 'multiple', category: '🎭 als ob + KII', question: 'După „als ob", verbul stă:', options: ['la final (Konjunktiv II)', 'pe poziția 2', 'la infinitiv', 'pe prima poziție'], correct: 'la final (Konjunktiv II)', explanation: '„als ob" e conjuncție → verbul la final, în KII.' },
-    { type: 'luckentext', category: '🎭 als ob + KII', question: 'Completează (wissen → KII):', sentence: 'Sie spricht, als ob sie alles <strong>______</strong>.', translation: 'wissen → wüsste.', accept: ['wüsste', 'wuesste'], correct: 'wüsste', explanation: 'wissen la Konjunktiv II: wüsste.' },
+    { type: 'luckentext', category: '🎭 als ob + KII', question: 'Completează (wissen → KII):', sentence: 'Sie spricht, als ob sie alles <strong>______</strong>.', translation: 'wissen.', accept: ['wüsste', 'wuesste'], correct: 'wüsste', explanation: 'wissen la Konjunktiv II: wüsste.' },
 
     // 🔄 als + Inversion (3)
-    { type: 'luckentext', category: '🔄 als-Inversion', question: 'Completează (als + inversiune):', sentence: 'Er tut so, als <strong>______</strong> er müde. (sein)', translation: 'verbul KII imediat după als → wäre.', accept: ['wäre', 'waere'], correct: 'wäre', explanation: '„als wäre er müde" = „als ob er müde wäre".' },
+    { type: 'luckentext', category: '🔄 als-Inversion', question: 'Completează (als + inversiune):', sentence: 'Er tut so, als <strong>______</strong> er müde. (sein)', translation: 'verbul KII imediat după als.', accept: ['wäre', 'waere'], correct: 'wäre', explanation: '„als wäre er müde" = „als ob er müde wäre".' },
     { type: 'multiple', category: '🔄 als-Inversion', question: '„als" fără „ob" cere verbul:', options: ['imediat după als', 'la final', 'la infinitiv', 'deloc'], correct: 'imediat după als', explanation: 'Fără „ob", inversiune: als + verb KII + subiect.' },
     { type: 'multiple', category: '🔄 als-Inversion', question: '„Er tut, als ob er alles weiß." — ce e greșit?', options: ['weiß → wüsste (Konjunktiv II)', 'als ob → als wenn', 'tut → macht', 'nimic'], correct: 'weiß → wüsste (Konjunktiv II)', explanation: 'Comparația ireală cere KII: wüsste, nu Indikativ weiß.' },
 
     // 👁️ Hauptsatzverb (3)
-    { type: 'luckentext', category: '👁️ Hauptsatzverb', question: 'Completează (aussehen):', sentence: 'Es <strong>______</strong> aus, als ob es regnet. (aussehen)', translation: 'aussehen → sieht … aus.', accept: ['sieht'], correct: 'sieht', explanation: 'Verbul principal: es sieht aus, als ob …' },
+    { type: 'luckentext', category: '👁️ Hauptsatzverb', question: 'Completează (aussehen):', sentence: 'Es <strong>______</strong> aus, als ob es regnet. (aussehen)', translation: 'aussehen.', accept: ['sieht'], correct: 'sieht', explanation: 'Verbul principal: es sieht aus, als ob …' },
     { type: 'multiple', category: '👁️ Hauptsatzverb', question: 'Care NU introduce o comparație ireală (als ob)?', options: ['gehen', 'aussehen', 'wirken', 'scheinen'], correct: 'gehen', explanation: 'aussehen/wirken/scheinen cheamă „als ob"; „gehen" nu.' },
-    { type: 'luckentext', category: '👁️ Hauptsatzverb', question: 'Completează (so tun):', sentence: 'Er <strong>______</strong> so, als ob er der Chef wäre. (tun)', translation: 'so tun → tut.', accept: ['tut'], correct: 'tut', explanation: 'so tun, als ob … = a se preface că.' },
+    { type: 'luckentext', category: '👁️ Hauptsatzverb', question: 'Completează (so tun):', sentence: 'Er <strong>______</strong> so, als ob er der Chef wäre. (tun)', translation: 'so tun.', accept: ['tut'], correct: 'tut', explanation: 'so tun, als ob … = a se preface că.' },
 
     // ⏳ Zeit (3)
     { type: 'luckentext', category: '⏳ Zeit', question: 'Completează (vorzeitig):', sentence: 'Sie sieht aus, als ob sie nicht geschlafen <strong>______</strong>.', translation: 'anterior: geschlafen + hätte.', accept: ['hätte', 'haette'], correct: 'hätte', explanation: 'vorzeitig → Partizip II + hätte (schlafen ia haben).' },
     { type: 'multiple', category: '⏳ Zeit', question: '„als ob er krank gewesen ___" — completează:', options: ['wäre', 'hätte', 'ist', 'war'], correct: 'wäre', explanation: 'sein → gewesen + wäre (trecut ireal).' },
-    { type: 'luckentext', category: '⏳ Zeit', question: 'Completează (gleichzeitig, sein):', sentence: 'Er lächelt, als ob er glücklich <strong>______</strong>.', translation: 'simultan → wäre.', accept: ['wäre', 'waere'], correct: 'wäre', explanation: 'gleichzeitig → Konjunktiv II prezent: wäre.' },
+    { type: 'luckentext', category: '⏳ Zeit', question: 'Completează (gleichzeitig, sein):', sentence: 'Er lächelt, als ob er glücklich <strong>______</strong>.', translation: 'simultan.', accept: ['wäre', 'waere'], correct: 'wäre', explanation: 'gleichzeitig → Konjunktiv II prezent: wäre.' },
 
     // 🇷🇴 Traducere (3)
     { type: 'translate', category: '🇷🇴 Traducere', question: 'Traduceți (als ob):', ro: 'Se poartă ca și cum ar fi obosit.', accept: ['er tut als ob er müde wäre', 'er tut als ob er muede waere', 'er tut so als ob er müde wäre', 'er tut so als ob er muede waere'], correct: 'Er tut, als ob er müde wäre.', explanation: 'als ob + Konjunktiv II: er müde wäre.' },

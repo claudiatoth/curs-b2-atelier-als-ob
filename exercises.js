@@ -18,14 +18,14 @@ function normalizeAnswer(str) {
 // EX 1: als ob + Konjunktiv II (completează forma de KII)
 // ============================================
 const ex1Data = [
-    { id: 'a', sentence: 'Er tut, als ob er krank ____. (sein)', translation: 'sein → wäre (Konjunktiv II).', correct: 'wäre', accept: ['wäre', 'waere'] },
-    { id: 'b', sentence: 'Sie spricht, als ob sie alles ____. (wissen)', translation: 'wissen → wüsste.', correct: 'wüsste', accept: ['wüsste', 'wuesste'] },
-    { id: 'c', sentence: 'Er isst, als ob er großen Hunger ____. (haben)', translation: 'haben → hätte.', correct: 'hätte', accept: ['hätte', 'haette'] },
-    { id: 'd', sentence: 'Sie tut, als ob sie mich nicht ____. (sehen)', translation: 'sehen → sähe.', correct: 'sähe', accept: ['sähe', 'saehe'] },
-    { id: 'e', sentence: 'Er rennt, als ob es um sein Leben ____. (gehen)', translation: 'gehen → ginge.', correct: 'ginge', accept: ['ginge'] },
-    { id: 'f', sentence: 'Sie liegt da, als ob sie ____. (schlafen)', translation: 'schlafen → schliefe.', correct: 'schliefe', accept: ['schliefe'] },
-    { id: 'g', sentence: 'Er redet, als ob er der Chef ____. (sein)', translation: 'sein → wäre.', correct: 'wäre', accept: ['wäre', 'waere'] },
-    { id: 'h', sentence: 'Es klingt, als ob jemand ____. (kommen)', translation: 'kommen → käme.', correct: 'käme', accept: ['käme', 'kaeme'] }
+    { id: 'a', sentence: 'Er tut, als ob er krank ____. (sein)', translation: 'sein.', correct: 'wäre', accept: ['wäre', 'waere'] },
+    { id: 'b', sentence: 'Sie spricht, als ob sie alles ____. (wissen)', translation: 'wissen.', correct: 'wüsste', accept: ['wüsste', 'wuesste'] },
+    { id: 'c', sentence: 'Er isst, als ob er großen Hunger ____. (haben)', translation: 'haben.', correct: 'hätte', accept: ['hätte', 'haette'] },
+    { id: 'd', sentence: 'Sie tut, als ob sie mich nicht ____. (sehen)', translation: 'sehen.', correct: 'sähe', accept: ['sähe', 'saehe'] },
+    { id: 'e', sentence: 'Er rennt, als ob es um sein Leben ____. (gehen)', translation: 'gehen.', correct: 'ginge', accept: ['ginge'] },
+    { id: 'f', sentence: 'Sie liegt da, als ob sie ____. (schlafen)', translation: 'schlafen.', correct: 'schliefe', accept: ['schliefe'] },
+    { id: 'g', sentence: 'Er redet, als ob er der Chef ____. (sein)', translation: 'sein.', correct: 'wäre', accept: ['wäre', 'waere'] },
+    { id: 'h', sentence: 'Es klingt, als ob jemand ____. (kommen)', translation: 'kommen.', correct: 'käme', accept: ['käme', 'kaeme'] }
 ];
 
 function buildEx1() {
@@ -72,13 +72,13 @@ function resetEx1() { buildEx1(); }
 // EX 2: als + inversiune (verbul KII imediat după als)
 // ============================================
 const ex2Data = [
-    { id: 'a', sentence: 'Er tut so, als ____ er müde. (sein)', translation: 'inversiune: verbul KII după als → wäre.', correct: 'wäre', accept: ['wäre', 'waere'] },
-    { id: 'b', sentence: 'Sie spricht, als ____ sie alles. (wissen)', translation: 'wissen → wüsste.', correct: 'wüsste', accept: ['wüsste', 'wuesste'] },
-    { id: 'c', sentence: 'Es sieht aus, als ____ es gleich regnen. (werden)', translation: 'verbe slabe → würde + Inf.', correct: 'würde', accept: ['würde', 'wuerde'] },
-    { id: 'd', sentence: 'Er isst, als ____ er großen Hunger. (haben)', translation: 'haben → hätte.', correct: 'hätte', accept: ['hätte', 'haette'] },
-    { id: 'e', sentence: 'Sie tut, als ____ sie mich nicht sehen. (können)', translation: 'können → könnte.', correct: 'könnte', accept: ['könnte', 'koennte'] },
-    { id: 'f', sentence: 'Er rennt, als ____ es um sein Leben. (gehen)', translation: 'gehen → ginge.', correct: 'ginge', accept: ['ginge'] },
-    { id: 'g', sentence: 'Es klingt, als ____ jemand an der Tür. (stehen)', translation: 'stehen → stünde (sau stände).', correct: 'stünde', accept: ['stünde', 'stuende', 'stände', 'staende'] },
+    { id: 'a', sentence: 'Er tut so, als ____ er müde. (sein)', translation: 'inversiune: verbul KII după als.', correct: 'wäre', accept: ['wäre', 'waere'] },
+    { id: 'b', sentence: 'Sie spricht, als ____ sie alles. (wissen)', translation: 'wissen.', correct: 'wüsste', accept: ['wüsste', 'wuesste'] },
+    { id: 'c', sentence: 'Es sieht aus, als ____ es gleich regnen. (werden)', translation: 'verbe slabe.', correct: 'würde', accept: ['würde', 'wuerde'] },
+    { id: 'd', sentence: 'Er isst, als ____ er großen Hunger. (haben)', translation: 'haben.', correct: 'hätte', accept: ['hätte', 'haette'] },
+    { id: 'e', sentence: 'Sie tut, als ____ sie mich nicht sehen. (können)', translation: 'können.', correct: 'könnte', accept: ['könnte', 'koennte'] },
+    { id: 'f', sentence: 'Er rennt, als ____ es um sein Leben. (gehen)', translation: 'gehen.', correct: 'ginge', accept: ['ginge'] },
+    { id: 'g', sentence: 'Es klingt, als ____ jemand an der Tür. (stehen)', translation: 'stehen.', correct: 'stünde', accept: ['stünde', 'stuende', 'stände', 'staende'] },
     { id: 'h', sentence: 'Sie lächelt, als ____ nichts geschehen. (sein)', translation: 'trecut ireal: als wäre nichts geschehen.', correct: 'wäre', accept: ['wäre', 'waere'] }
 ];
 
@@ -126,13 +126,13 @@ function resetEx2() { buildEx2(); }
 // EX 3: Hauptsatzverb (verbul care introduce comparația)
 // ============================================
 const ex3Data = [
-    { id: 'a', sentence: 'Es ____ aus, als ob es regnen würde. (aussehen)', translation: 'aussehen → sieht … aus.', correct: 'sieht', accept: ['sieht'] },
-    { id: 'b', sentence: 'Er ____ so, als ob er alles wüsste. (tun)', translation: 'so tun → tut.', correct: 'tut', accept: ['tut'] },
-    { id: 'c', sentence: 'Sie ____, als ob sie krank wäre. (wirken)', translation: 'wirken → wirkt.', correct: 'wirkt', accept: ['wirkt'] },
-    { id: 'd', sentence: 'Das ____, als ob jemand weinte. (klingen)', translation: 'klingen → klingt.', correct: 'klingt', accept: ['klingt'] },
-    { id: 'e', sentence: 'Ich ____ mich, als ob ich fliegen würde. (sich fühlen)', translation: 'sich fühlen → fühle mich.', correct: 'fühle', accept: ['fühle', 'fuehle'] },
-    { id: 'f', sentence: 'Es ____, als ob alles gut wäre. (scheinen)', translation: 'scheinen → scheint.', correct: 'scheint', accept: ['scheint'] },
-    { id: 'g', sentence: 'Er ____ so, als ob nichts passiert wäre. (tun)', translation: 'so tun → tut.', correct: 'tut', accept: ['tut'] },
+    { id: 'a', sentence: 'Es ____ aus, als ob es regnen würde. (aussehen)', translation: 'aussehen.', correct: 'sieht', accept: ['sieht'] },
+    { id: 'b', sentence: 'Er ____ so, als ob er alles wüsste. (tun)', translation: 'so tun.', correct: 'tut', accept: ['tut'] },
+    { id: 'c', sentence: 'Sie ____, als ob sie krank wäre. (wirken)', translation: 'wirken.', correct: 'wirkt', accept: ['wirkt'] },
+    { id: 'd', sentence: 'Das ____, als ob jemand weinte. (klingen)', translation: 'klingen.', correct: 'klingt', accept: ['klingt'] },
+    { id: 'e', sentence: 'Ich ____ mich, als ob ich fliegen würde. (sich fühlen)', translation: 'sich fühlen.', correct: 'fühle', accept: ['fühle', 'fuehle'] },
+    { id: 'f', sentence: 'Es ____, als ob alles gut wäre. (scheinen)', translation: 'scheinen.', correct: 'scheint', accept: ['scheint'] },
+    { id: 'g', sentence: 'Er ____ so, als ob nichts passiert wäre. (tun)', translation: 'so tun.', correct: 'tut', accept: ['tut'] },
     { id: 'h', sentence: 'Es ____ mir vor, als ob wir uns kennen würden. (vorkommen)', translation: 'es kommt mir vor.', correct: 'kommt', accept: ['kommt'] }
 ];
 
@@ -180,14 +180,14 @@ function resetEx3() { buildEx3(); }
 // EX 4: Zeit — gleichzeitig (wäre) vs vorzeitig (hätte)
 // ============================================
 const ex4Data = [
-    { id: 'a', sentence: 'Sie sieht aus, als ob sie nicht geschlafen ____. (vorzeitig)', translation: 'schlafen → haben → hätte (geschlafen hätte).', correct: 'hätte', accept: ['hätte', 'haette'] },
-    { id: 'b', sentence: 'Er tut, als ob er müde ____. (gleichzeitig)', translation: 'simultan: sein → wäre.', correct: 'wäre', accept: ['wäre', 'waere'] },
-    { id: 'c', sentence: 'Es war, als ob die Zeit stehen geblieben ____. (vorzeitig)', translation: 'bleiben → sein → wäre (geblieben wäre).', correct: 'wäre', accept: ['wäre', 'waere'] },
-    { id: 'd', sentence: 'Sie spricht, als ob sie das Buch gelesen ____. (vorzeitig)', translation: 'lesen → haben → hätte (gelesen hätte).', correct: 'hätte', accept: ['hätte', 'haette'] },
-    { id: 'e', sentence: 'Er lächelt, als ob er glücklich ____. (gleichzeitig)', translation: 'simultan: sein → wäre.', correct: 'wäre', accept: ['wäre', 'waere'] },
-    { id: 'f', sentence: 'Sie sieht aus, als ob sie geweint ____. (vorzeitig)', translation: 'weinen → haben → hätte.', correct: 'hätte', accept: ['hätte', 'haette'] },
-    { id: 'g', sentence: 'Er tut, als ob er nichts gehört ____. (vorzeitig)', translation: 'hören → haben → hätte.', correct: 'hätte', accept: ['hätte', 'haette'] },
-    { id: 'h', sentence: 'Es klang, als ob jemand gefallen ____. (vorzeitig)', translation: 'fallen → sein → wäre (gefallen wäre).', correct: 'wäre', accept: ['wäre', 'waere'] }
+    { id: 'a', sentence: 'Sie sieht aus, als ob sie nicht geschlafen ____. (vorzeitig)', translation: 'schlafen.', correct: 'hätte', accept: ['hätte', 'haette'] },
+    { id: 'b', sentence: 'Er tut, als ob er müde ____. (gleichzeitig)', translation: 'simultan: sein.', correct: 'wäre', accept: ['wäre', 'waere'] },
+    { id: 'c', sentence: 'Es war, als ob die Zeit stehen geblieben ____. (vorzeitig)', translation: 'bleiben.', correct: 'wäre', accept: ['wäre', 'waere'] },
+    { id: 'd', sentence: 'Sie spricht, als ob sie das Buch gelesen ____. (vorzeitig)', translation: 'lesen.', correct: 'hätte', accept: ['hätte', 'haette'] },
+    { id: 'e', sentence: 'Er lächelt, als ob er glücklich ____. (gleichzeitig)', translation: 'simultan: sein.', correct: 'wäre', accept: ['wäre', 'waere'] },
+    { id: 'f', sentence: 'Sie sieht aus, als ob sie geweint ____. (vorzeitig)', translation: 'weinen.', correct: 'hätte', accept: ['hätte', 'haette'] },
+    { id: 'g', sentence: 'Er tut, als ob er nichts gehört ____. (vorzeitig)', translation: 'hören.', correct: 'hätte', accept: ['hätte', 'haette'] },
+    { id: 'h', sentence: 'Es klang, als ob jemand gefallen ____. (vorzeitig)', translation: 'fallen.', correct: 'wäre', accept: ['wäre', 'waere'] }
 ];
 
 function buildEx4() {
