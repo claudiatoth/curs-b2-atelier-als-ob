@@ -203,7 +203,7 @@ function buildEx4() {
             <div class="input-group">
                 <label>${it.sentence}</label>
                 ${it.translation ? '<small style="color:#5A5147">💬 ' + it.translation + '</small>' : ''}
-                <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="ex4-${it.id}" placeholder="wäre / hätte">
+                <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="ex4-${it.id}" placeholder="...">
             </div>
             <div class="feedback" id="ex4-f${it.id}"></div>
         </div>`;
